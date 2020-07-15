@@ -1,0 +1,28 @@
+// 基于 rest client插件，，使用前须下载
+//每个请求用###分隔
+
+@uri=http://localhost:3000/
+
+GET  {{uri}}products
+
+###
+GET {{uri}}products/5f0e78c3bef9cf22bc868c74
+
+###
+POST {{uri}}products
+Content-Type: application/json
+
+{
+  "title":"产品4"
+}
+
+###
+PUT  {{uri}}products/5f0e84160ab8a42e2c544241
+Content-Type: application/json
+
+{
+  "title":"产品44"
+}
+
+###
+DELETE  {{uri}}products/5f0e84160ab8a42e2c544241
